@@ -3,8 +3,9 @@
 namespace Adcetera\svc_max;
 
 use Adcetera\svc_max\Type\CoverageQuery;
+use Drupal\salesforce_soap\Soap\SoapClient;
 
-class SvcMaxClient extends \SoapClient {
+class SvcMaxClient extends SoapClient {
 
   /**
    * @var array $classmap The defined classes
@@ -34,7 +35,7 @@ class SvcMaxClient extends \SoapClient {
   }
 
   public function coverageQuery(CoverageQuery $parameters) {
-    return $this->__soapCall('coverageQuery', array($parameters));
+    return $this->trySoap('coverageQuery', array($parameters));
   }
 
 }

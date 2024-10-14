@@ -14,5 +14,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "drupal/salesforce": "^5"
+    },
+    "repositories": {
+        "1": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "0": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    }
 }
