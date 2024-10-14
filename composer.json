@@ -1,0 +1,18 @@
+{
+    "name": "adcetera/svc_max",
+    "description": "A PHP library to connect to the ServiceMax webservice.",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Adcetera\\svc_max\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kyle Regan",
+            "email": "kregan@adcetera.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
